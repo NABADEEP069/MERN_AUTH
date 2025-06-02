@@ -6,17 +6,17 @@ const app = express();
 
 
 app.get('/', (req, res) => {
-    res.send('server is ready');
+    res.send('server issss ready');
 })
 
 
-app.get('/name', (req, res) => {
+app.get('/api/name', (req, res) => {
     const name = [
         { name: 'Nobo', age: 30 },
         { name: 'Prashant', age: 25 },
         { name: 'X', age: 28 }
     ];
-    res.json(name);
+    res.send(name);
 });  
 
 
